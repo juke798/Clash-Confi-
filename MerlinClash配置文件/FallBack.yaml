@@ -101,6 +101,21 @@ proxy-groups:
       - DIRECT
     include-all: false
 
+  - name: 🎥 HBO
+    type: select
+    proxies:
+      - 🔃 自动选择
+      - 🇺🇸 美国-故转
+      - 🇭🇰 香港-故转
+      - 🇯🇵 日本-故转
+      - 🇹🇼 台湾-故转
+      - 🇸🇬 新加坡-故转
+      - 🇰🇷 韩国-故转
+      - 🇬🇧 英国-故转
+      - 🌍 其他国家-故转
+      - DIRECT
+    include-all: false    
+
   - name: 📲 Telegram
     type: select
     proxies:
@@ -603,6 +618,8 @@ rules:
   - GEOSITE,netflix,🎥 Netflix
   # 🎥 Disney+
   - GEOSITE,disney,🎥 Disney+
+  # 🎥 HBO
+  - GEOSITE,hbo,🎥 HBO
   # 🎵 Spotify
   - GEOSITE,spotify,🎵 Spotify
   # 📲 Telegram
@@ -660,6 +677,7 @@ rules:
   # 🐟 漏网之鱼
 
   - MATCH,🐟 漏网之鱼
+
 
 
 
