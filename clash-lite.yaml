@@ -1,7 +1,7 @@
 # 机场订阅
 proxy-providers:
   Airport1:
-    url: "http://192.168.0.1:3001/CKg3abstVnOeRpm1aD6G/download/%E7%BE%8E%E5%9B%BD?target=ClashMeta"
+    url: "此处粘贴机场订阅链接地址（clash订阅链接）"
     type: http
     interval: 86400
     health-check:
@@ -21,9 +21,6 @@ proxy-providers:
 
 # 节点信息
 proxies:
-  - {"type":"tuic","name":"法国","server":"135.125.9.52","port":40162,"password":"admin","uuid":"a0295d82-1c3b-423c-80d3-d53c5284da65","sni":"www.bing.com","alpn":["h3"],"congestion-controller":"bbr","skip-cert-verify":true,"version":5}
-
-  - {"type":"tuic","name":"TUIC--","server":"51.75.118.151","port":20080,"password":"admin","uuid":"ba4a46de-046a-4965-b07e-a99f5e42bb09","sni":"www.bing.com","alpn":["h3"],"congestion-controller":"bbr","allowInsecure":"1","version":5}
 
   - {name: 直连, type: direct}
 
@@ -262,4 +259,5 @@ rule-providers:
   facebook_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/facebook.mrs" }
   steamcdn_ip: { <<: *ip, url: "https://raw.githubusercontent.com/Lanlan13-14/Rules/refs/heads/main/rules/IP/steamCDN-ip.mrs" }
   twitter_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/twitter.mrs" }                                               
+
 
